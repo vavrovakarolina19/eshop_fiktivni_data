@@ -1,6 +1,6 @@
 -- Celková míra návratnosti (Cumulative Retention Rate)
 -- Otázka: Kolik % zákazníků nakoupilo alespoň dvakrát za celou dobu existence e-shopu?
--- Výsledek: 74,1 % 
+-- Výsledek: 77,7 % 
 -- Interpretace: 3 ze 4 zákazníků se vrátilo pro další nákup.
 
 with prvni_objednavka as (
@@ -22,7 +22,7 @@ from prvni_objednavka p
 left join znovu_objednavka z 
     on p.id_zakaznik = z.id_zakaznik;
 
--- Výsledek: 74,1 % 
+-- Výsledek: 77,7 % 
 -- Interpretace: 3 ze 4 zákazníků se vrátilo pro další nákup.
 
 
@@ -51,15 +51,17 @@ left join znovu_objednavka z
     on p.id_zakaznik = z.id_zakaznik;
 
 -- Následující roky (dotaz ve stejném znění, jen změna let)
-2020,10.4
-2021,11.2
-2022,10.9
-2023,26.6
-2024,32.4
-2025,31.3
-
--- Interpretace: Ze začátku fungování eshopu nízká, po roce 2023 se zvýšila téměř trojnásobně. Důvodem bylo nejspíš otevření poboček. 
-
+2015 4.7
+2016 6.7
+2017 7.7
+2018 9.6
+2019 13.5
+2020 14.7
+2021 16.6
+2022 17.3
+2023 13.9
+2024 15.9
+2025 15.8
 
 -- Závěr: Míra návratnosti za jednotlivé roky je výrazně nižší, než celková míra návratnosti. 
 -- V tomto případě bych nedoporučila zavádět jakýkoliv program v délce trvání 1-2 roky, jelikož zákazníci se vrací po delší době. 
