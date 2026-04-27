@@ -7,9 +7,9 @@
 -- Část 1: LTV pro každý segment
 
 with zakladni_data as (SELECT id_zakaznik , AVG(cena_celkem) as prumerna_objednavka, COUNT(id_objednavky) as pocet_objednavek, 
-MIN(PARSE_DATE('%d.%m.%Y', datum)) as prvni_nakup,
-MAX(PARSE_DATE('%d.%m.%Y', datum)) as posledni_nakup,
-FROM `zakaznici-493506.zakaznici.objednavky`
+MIN(datum) as prvni_nakup,
+MAX(datum) as posledni_nakup,
+FROM `fiktivnidata.01.objednavky50`
 GROUP BY id_zakaznik
 ),
 ltv_zakaznik as (SELECT id_zakaznik, (prumerna_objednavka * pocet_objednavek)  as ltv, CASE 
@@ -24,6 +24,10 @@ FROM ltv_zakaznik
 GROUP BY typ_zakaznik
 ORDER BY prumerna_ltv DESC;
 
+1	věrný	50914.147521160827
+2	příležitostný	24702.46826516221
+3	jednorázový	11700.23084025854
+
 -- Věrný zákazník nám přinese 4,3x víc peněz než jednorázový.
 
 
@@ -32,9 +36,9 @@ ORDER BY prumerna_ltv DESC;
 -- Část 2: Průměr pro všechny zákazníky dohromady
 
 with zakladni_data as (SELECT id_zakaznik , AVG(cena_celkem) as prumerna_objednavka, COUNT(id_objednavky) as pocet_objednavek, 
-MIN(PARSE_DATE('%d.%m.%Y', datum)) as prvni_nakup,
-MAX(PARSE_DATE('%d.%m.%Y', datum)) as posledni_nakup,
-FROM `zakaznici-493506.zakaznici.objednavky`
+MIN(datum) as prvni_nakup,
+MAX(datum) as posledni_nakup,
+FROM `fiktivnidata.01.objednavky50`
 GROUP BY id_zakaznik
 ),
 ltv_zakaznik as (SELECT id_zakaznik, (prumerna_objednavka * pocet_objednavek)  as ltv, CASE 
@@ -47,4 +51,4 @@ FROM zakladni_data)
 SELECT AVG(ltv) AS prumerna_ltv
 FROM ltv_zakaznik;
 
--- Průměrný zákazník utratí 14 546 Kč.
+-- Průměrný zákazník utratí 30 720 Kč.
