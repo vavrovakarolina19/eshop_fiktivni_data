@@ -35,18 +35,15 @@ ORDER BY prumerna_ltv DESC;
 
 -- Část 2: Průměr pro všechny zákazníky dohromady
 
-with zakladni_data as (SELECT id_zakaznik , AVG(cena_celkem) as prumerna_objednavka, COUNT(id_objednavky) as pocet_objednavek, 
+with zakladni_data as (SELECT id_zakaznik, AVG(cena_celkem) as prumerna_objednavka, COUNT(id_objednavky) as pocet_objednavek, 
 MIN(datum) as prvni_nakup,
 MAX(datum) as posledni_nakup,
 FROM `fiktivnidata.01.objednavky50`
 GROUP BY id_zakaznik
 ),
-ltv_zakaznik as (SELECT id_zakaznik, (prumerna_objednavka * pocet_objednavek)  as ltv, CASE 
-    WHEN pocet_objednavek = 1 THEN 'jednorázový'
-    WHEN pocet_objednavek <= 3 THEN 'příležitostný'
-    ELSE 'věrný'
-END as typ_zakaznik
-FROM zakladni_data)
+
+ltv_zakaznik as (SELECT id_zakaznik, (prumerna_objednavka * pocet_objednavek)  as ltv 
+from zakladni_data)
 
 SELECT AVG(ltv) AS prumerna_ltv
 FROM ltv_zakaznik;
