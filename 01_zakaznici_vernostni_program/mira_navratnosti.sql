@@ -4,16 +4,16 @@
 -- Interpretace: 3 ze 4 zákazníků se vrátilo pro další nákup.
 
 with prvni_objednavka as (
-    select id_zakaznik, min(PARSE_DATE('%d.%m.%Y', datum)) as prvni_den
-    from `zakaznici-493506.zakaznici.objednavky`
+    select id_zakaznik, min(datum) as prvni_den
+    from `fiktivnidata.01.objednavky50`
     GROUP BY id_zakaznik
 ),
 znovu_objednavka as (
     select distinct p.id_zakaznik
     from prvni_objednavka p
-    join `zakaznici-493506.zakaznici.objednavky` o 
+    join `fiktivnidata.01.objednavky50` o 
         on o.id_zakaznik = p.id_zakaznik
-       and PARSE_DATE('%d.%m.%Y', o.datum) > p.prvni_den
+       and o.datum > p.prvni_den
 )
 
 select 
@@ -21,16 +21,15 @@ select
 from prvni_objednavka p
 left join znovu_objednavka z 
     on p.id_zakaznik = z.id_zakaznik;
-
 -- Výsledek: 77,7 % 
 -- Interpretace: 3 ze 4 zákazníků se vrátilo pro další nákup.
 
 
 -- Roční míra návratnosti (dotaz pro rok 2025)
 with prvni_objednavka as (
-    select id_zakaznik, min(PARSE_DATE('%d.%m.%Y', datum)) as prvni_den
-    from `zakaznici-493506.zakaznici.objednavky`
-    WHERE EXTRACT(YEAR FROM PARSE_DATE('%d.%m.%Y', datum)) = 2025
+    select id_zakaznik, min(datum) as prvni_den
+    from `fiktivnidata.01.objednavky50`
+    WHERE EXTRACT(YEAR FROM datum) = 2025
 
     GROUP BY id_zakaznik
 
@@ -38,10 +37,10 @@ with prvni_objednavka as (
 znovu_objednavka as (
     select distinct p.id_zakaznik
     from prvni_objednavka p
-    join `zakaznici-493506.zakaznici.objednavky` o 
+    join `fiktivnidata.01.objednavky50` o 
         on o.id_zakaznik = p.id_zakaznik
-       and PARSE_DATE('%d.%m.%Y', o.datum) > p.prvni_den
-     WHERE EXTRACT(YEAR FROM PARSE_DATE('%d.%m.%Y', datum)) = 2025  
+       and o.datum > p.prvni_den
+     WHERE EXTRACT(YEAR FROM datum) = 2025  
 )
 
 select 
