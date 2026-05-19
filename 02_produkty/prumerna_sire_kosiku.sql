@@ -3,7 +3,7 @@
 -- Liší se šíře košíku mezi věrnými, příležitostními a jednorázovými zákazníky?
 -- Šíře košíku = počet unikátních produktů v jedné objednávce
 
--- Část 1: Průměrná šíře košíku podle segmentu
+-- Průměrná šíře košíku podle segmentu
 
 WITH kosik_objednavka AS (
     SELECT
@@ -26,7 +26,7 @@ jednorazovy       1.94
 verny             1.27
 prilezitostny     1.25
 
--- Část 2: Průměrná šíře košíku celkem
+-- Průměrná šíře košíku celkem
 
 WITH kosik_objednavka AS (
     SELECT
