@@ -24,9 +24,10 @@ věrný		5.65
 příležitostný	3.03
 jednorázový		1.94
  
--- Věrný zákazník nakupuje průměrně 5.65 produktů.
+-- Věrný zákazník nakupuje průměrně 5.65 unikátních produktů.
 -- Jednorázový zákazník nakupuje průměrně 1.94 produktů.
--- Rozdíl: 2.9x více produktů u věrného zákazníka.
+-- Věrní zákazníci nakupují přibližně 2,9× širší produktové portfolio než jednorázoví zákazníci.
+-- Vyšší produktová diverzita je spojena s věrnějším zákaznickým chováním.
  
 -- Část 2: Průměr pro všechny zákazníky dohromady
 WITH produkty_zakaznik AS (
