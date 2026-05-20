@@ -51,7 +51,7 @@ Průměrná objednávka obsahuje 1,31 unikátních produktů. Nejširší koší
 To naznačuje, že věrnost není budována velikostí jedné objednávky, ale dlouhodobým nákupním chováním zákazníků.
 
 ![kosik](./screenshots/sire_kosiku.png)
-![kosik1](./screenshots/sire_kosiku_segmenty.png)
+![kosik1](./screenshots/sirka_kosiku_segmenty.png)
 
 **Doplňkové statistické ověření**
 
