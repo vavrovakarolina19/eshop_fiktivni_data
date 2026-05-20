@@ -35,7 +35,7 @@ Největší podíl kampanových objednávek pochází z Google (37,99 %), násle
 Výstup ukazuje rozložení kampanových objednávek mezi jednotlivé marketingové kanály, nikoli jejich efektivitu.
 
 
-![podil](./screenshots/podil_kanalu_kampan.png)
+![podil](./screenshots/podil_kanalu_kampane.png)
 
 **Využití slev podle segmentu**
 
@@ -43,7 +43,7 @@ Ve všech segmentech převažují objednávky bez slevy. Nejvyšší podíl slev
 
 Výsledek naznačuje, že sleva pravděpodobně není hlavním důvodem opakovaných nákupů věrných zákazníků.
 
-![slevy](./screenshots/vyuziti_slev_segment.png)
+![slevy](./screenshots/vyuzitit_slev_segment.png)
 
 **Srovnání vývoje kampaní a celkových objednávek**
 
