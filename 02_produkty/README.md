@@ -32,7 +32,7 @@ Při pohledu na jednotlivé objednávky se ukazuje, že zákazníci nakupují po
 
 Rozdíl mezi segmenty se tedy neprojevuje v typu produktu, ale v počtu opakovaných nákupů.
 
-
+![poradi](./screenshots/poradi_objednavky_produkty.png)
 
 **Produktová diverzita zákazníků**
 
@@ -40,7 +40,8 @@ Věrní zákazníci nakupují výrazně širší portfolio produktů než jednor
 
 Vyšší produktová diverzita je spojena s věrnějším zákaznickým chováním a naznačuje, že návratnost zákazníků souvisí spíše s dlouhodobým rozšiřováním nákupního portfolia než s jedním konkrétním produktem.
 
-
+![diverzita](./screenshots/unikatni_produkty.png)
+![diverzita1](./screenshots/unikatni_produkty_segmenty.png)
 
 
 **Průměrná šíře košíku**
@@ -49,7 +50,8 @@ Průměrná objednávka obsahuje 1,31 unikátních produktů. Nejširší koší
 
 To naznačuje, že věrnost není budována velikostí jedné objednávky, ale dlouhodobým nákupním chováním zákazníků.
 
-
+![kosik](./screenshots/sire_kosiku.png)
+![kosik1](./screenshots/sire_kosiku_segmenty.png)
 
 **Doplňkové statistické ověření**
 
