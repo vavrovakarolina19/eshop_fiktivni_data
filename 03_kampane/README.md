@@ -43,7 +43,7 @@ Ve všech segmentech převažují objednávky bez slevy. Nejvyšší podíl slev
 
 Výsledek naznačuje, že sleva pravděpodobně není hlavním důvodem opakovaných nákupů věrných zákazníků.
 
-![slevy](./screenshots/vyuzitit_slev_segment.png)
+![slevy](./screenshots/vyuzitit_slev_segmenty.png)
 
 **Srovnání vývoje kampaní a celkových objednávek**
 
