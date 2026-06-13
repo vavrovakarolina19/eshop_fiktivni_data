@@ -70,7 +70,7 @@ Součástí denormalizace bylo také doplnění pořadí objednávky zákazníka
 
 SQL skript:
 
-[02_bigquery_denormalizace.sql](./02_bigquery_denormalizace.sql)
+[02_bigquery_denormalizace.sql](./denormalizace_dat.sql)
 
 ---
 
