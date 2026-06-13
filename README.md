@@ -1,6 +1,6 @@
 # Data Analytics Portfolio
 
-Toto portfolio vzniklo jako praktická ukázka práce s datovou analytikou, business analytikou a interpretací dat pomocí SQL, Pythonu a Power BI. Hlavním cílem projektu není vytvoření produkční analytické studie, ale demonstrace analytického workflow — od práce s daty a datových transformací přes statistické ověřování až po business interpretaci výsledků.
+Toto portfolio vzniklo jako praktická ukázka práce s datovou analytikou, business analytikou a interpretací dat pomocí SQL, Pythonu a Power BI. Hlavním cílem projektu není vytvoření produkční analytické studie, ale demonstrace analytického workflow - od práce s daty a datových transformací přes statistické ověřování až po business interpretaci výsledků.
 
 Hlavní část portfolia tvoří případová studie zaměřená na vytvoření analytických podkladů pro rozhodnutí, zda by měl pro fiktivní e-shop smysl věrnostní program a jaké faktory mohou ovlivňovat návratnost zákazníků.
 
@@ -12,14 +12,11 @@ Projekt se zaměřuje nejen na samotnou vizualizaci dat, ale také na formulaci 
 
 # Důležité upozornění k datům
 
-Veškerá data použitá v projektu jsou **fiktivní** a byla vytvořena mnou výhradně pro účely tohoto portfolia. Dataset neslouží jako realistický model konkrétní firmy ani jako finální podklad pro reálné business rozhodování.
+Veškerá data použitá v projektu jsou fiktivní a byla vytvořena výhradně pro účely tohoto portfolia.
 
-Cílem datasetu bylo vytvořit konzistentní prostředí pro demonstraci analytických postupů, práce s daty a interpretace výsledků. Téma i struktura dat však vycházejí z problematiky, která odpovídá reálným otázkám z oblasti e-commerce, marketingu a zákaznické analytiky.
+Dataset neslouží jako realistický model konkrétní firmy ani jako finální podklad pro reálné business rozhodování. Cílem bylo vytvořit konzistentní prostředí pro demonstraci analytických postupů, práce s granularitou dat, SQL transformací, statistického ověřování a interpretace výsledků.
 
-Přestože jsou data fiktivní, jednotlivé analytické postupy, SQL dotazy, Python notebooky i dashboardingové principy byly navrženy tak, aby byly snadno přenositelné i na reálná e-commerce data. Po úpravě názvů tabulek, sloupců a případném rozšíření datasetu lze stejné principy využít i při analýze existujícího e-shopu nebo reálného zákaznického datasetu.
-
-Projekt zároveň nepředstavuje kompletní analytickou studii. Pro reálné nasazení by bylo potřeba výrazně rozsáhlejší množství dat, detailnější zákaznické informace, pokročilejší statistické modely, experimentální data a širší business kontext. Výsledky je proto nutné chápat především jako ukázku analytického přístupu, práce s daty a schopnosti interpretace výsledků.
-
+Přestože jsou data fiktivní, použité principy jsou přenositelné i na reálná e-commerce data - například při analýze zákaznického chování, retence, produktových preferencí nebo marketingových kampaní.
 ---
 
 # Struktura projektu
