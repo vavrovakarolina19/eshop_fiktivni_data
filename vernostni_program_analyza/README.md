@@ -17,9 +17,40 @@ Veškerá data použitá v projektu jsou fiktivní a byla vytvořena výhradně 
 Dataset neslouží jako realistický model konkrétní firmy ani jako finální podklad pro reálné business rozhodování. Cílem bylo vytvořit konzistentní prostředí pro demonstraci analytických postupů, práce s granularitou dat, SQL transformací, statistického ověřování a interpretace výsledků.
 
 Přestože jsou data fiktivní, použité principy jsou přenositelné i na reálná e-commerce data - například při analýze zákaznického chování, retence, produktových preferencí nebo marketingových kampaní.
+
 ---
 
+
+
 # Struktura projektu
+
+
+## 00 Příprava dat a datový model  
+### *„Jak byla data připravena pro analýzu?“*
+
+Nultá část projektu popisuje přípravu dat před samotnou analytickou částí. Zaměřuje se na strukturu zdrojových dat, návrh relačního modelu, ER diagram, ukázku tvorby tabulek v MySQL, denormalizaci dat v BigQuery a drobné úpravy v Power Query před tvorbou reportu v Power BI.
+
+Součástí kapitoly jsou také SQL skripty ukazující tvorbu zdrojových tabulek, vzorek vložených dat a vytvoření denormalizované analytické tabulky používané v navazujících analýzách.
+
+**Použité technologie:**
+- MySQL
+- BigQuery
+- SQL
+- Power Query
+- Power BI
+- draw.io
+
+**Hlavní témata:**
+- struktura zdrojových dat,
+- relační datový model,
+- ER diagram,
+- tvorba tabulek v MySQL,
+- denormalizace dat,
+- granularita dat,
+- kontrola výsledné analytické tabulky,
+- úpravy dat v Power Query.
+
+---
 
 ## 01 Analýza návratnosti a celoživotní hodnoty zákazníků  
 ### *„Má to pro naše zákazníky smysl?“*

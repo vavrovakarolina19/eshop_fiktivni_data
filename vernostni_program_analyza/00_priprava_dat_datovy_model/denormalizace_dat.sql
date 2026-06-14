@@ -2,7 +2,7 @@
 -- Výsledná tabulka slouží jako základ pro navazující SQL analýzy a Power BI výstupy.
 -- Granularita výsledné tabulky: 1 řádek = 1 položka objednávky.
 -- Součástí dotazu je výpočet pořadí objednávky zákazníka pomocí ROW_NUMBER(). 
-CREATE OR REPLACE TABLE `fiktivnidata.01.denormalizovany_dataset` AS.
+CREATE OR REPLACE TABLE `fiktivnidata.01.denormalizovany_dataset` AS
 
 WITH objednavky_s_poradim AS (
   SELECT
