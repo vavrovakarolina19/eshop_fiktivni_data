@@ -56,7 +56,7 @@ Kvůli rozsahu datasetu nejsou v repozitáři uvedeny kompletní `INSERT` přík
 
 SQL skript:
 
-[01_mysql_tvorba_tabulky.sql](./01_mysql_tvorba_tabulky.sql)
+[01_mysql_tvorba_tabulky.sql](./mysql_tabulky_a_vzorek_dat.sql)
 
 ---
 
@@ -70,7 +70,7 @@ Součástí denormalizace bylo také doplnění pořadí objednávky zákazníka
 
 SQL skript:
 
-[02_bigquery_denormalizace.sql](./02_bigquery_denormalizace.sql)
+[02_bigquery_denormalizace.sql](./denormalizace_dat.sql)
 
 ---
 
